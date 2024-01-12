@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75e06bbcc4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <h1>Harsh</h1>
+                <i class="fa-solid fa-bars" id="a1" onclick="openmenu()"></i>
+            </div>
+            <div class="menu">
+                <ul id="select">
+                    <i class="fa-solid fa-xmark" id="a2" onclick="closemenu()"></i>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('select');
+        const openmenu = () => {
+            x.style.left= '0px';
+        }
+        const closemenu = () => {
+            x.style.left = '-100%';
+        }
+    </script>
+</body>
+
+</html>
